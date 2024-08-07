@@ -14,15 +14,19 @@ This is a side project started while trying to speed up mask annotations with mo
 5. Use arrow keys "<" and ">" to go backwards or forwards without changing assigned status. Can revisist images and change status which will move the location og the image
 
 Buffer will always hold the images visited + the next 5
+- Can use a script to get all image names from approved/ and copy the respective .txt files from masks/ to actually use the mask files from approved.
+## Todo
+- Instead of moving the actual images just use a csv/txt for of the file names prepended with mask/. Not sure why didnt start with this
+- Add option to show the images with their mask from masks/ for when the input images dont have masks already applied
 
-- Can use a script to get all image names from approved/ and copy the respective .txt files from masks/ to actually use the mask files from approved
-
-## Goals
-- Add ability to hover masks and change the display to highlight the mask hovered
-- Use the actual images used in inference and apply the mask from masks/, instead of moving the output image move the mask .txt file
-- Using the mask + original image, add ability to click specific mask and customize the polygon
-- Add a configuration step to use your own labels / colors
-- Delete / add polygons
+## Ideas
+- Add ability to hover masks which will change the display to highlight the mask hovered
+- Using the mask + original image, add ability to click specific labels and customize the polygon
+- Could even add a similar "smart polygon" feature like the one used in rboflow
+  - If active, click on a bounded box to run inference on the section within the bounded box. From the output apply the resulted mask over the image OR
+    add the label-coordinates to the active mask file. 
+- Add a configuration step to use your own labels / colors and ability to customize encodings of the output masks
+- Delete / add polygons with changes reflected in the label file
 
 
 
