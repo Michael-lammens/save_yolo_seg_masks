@@ -13,7 +13,7 @@ This is a side project started while trying to speed up mask annotations with mo
 4. From the masked/bbox prediction images if the masks are good press space bar to add them to approved/ or "m" for rejected/
 5. Use arrow keys "<" and ">" to go backwards or forwards without changing assigned status. Can revisist images and change status which will move the location og the image
 
-Buffer will always hold the images visited + the next 5
+Buffer will always hold dictionary of path sections of the images visited + the next 5 in predictions/
 - Can use a script to get all image names from approved/ and copy the respective .txt files from masks/ to actually use the mask files from approved.
 ## Todo
 - Instead of moving the actual images just use a csv/txt for of the file names prepended with mask/. Not sure why didnt start with this
